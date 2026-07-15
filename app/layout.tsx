@@ -51,14 +51,14 @@ export const metadata: Metadata = {
     title: "Appstackers — AI Development Company & Product Studio",
     description:
       "We don’t demo AI. We ship it. Four live AI products, more on the way, and custom AI development for teams that want results.",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Appstackers" }],
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Appstackers" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Appstackers — AI Development Company & Product Studio",
     description:
       "We don’t demo AI. We ship it. Four live AI products, more on the way, and custom AI development for teams that want results.",
-    images: ["/og.png"],
+    images: ["/og.jpg"],
   },
   robots: {
     index: true,
