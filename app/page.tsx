@@ -365,20 +365,22 @@ export default function Home() {
 
             <ol className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {steps.map((s, i) => (
-                <Reveal key={s.num} delay={i * 110} className="h-full">
-                  <li className="group h-full rounded-3xl border border-white/[0.08] bg-pane/50 p-7 transition-colors duration-300 hover:border-white/20">
-                    <span className="gradient-text font-display text-5xl font-extrabold">
-                      {s.num}
-                    </span>
-                    <h3
-                      className="mt-4 font-display text-xl font-bold"
-                      style={{ fontFamily: "var(--font-display)" }}
-                    >
-                      {s.title}
-                    </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-fog">{s.body}</p>
-                  </li>
-                </Reveal>
+                <li key={s.num} className="h-full">
+                  <Reveal delay={i * 110} className="h-full">
+                    <div className="group h-full rounded-3xl border border-white/[0.08] bg-pane/50 p-7 transition-colors duration-300 hover:border-white/20">
+                      <span className="gradient-text font-display text-5xl font-extrabold">
+                        {s.num}
+                      </span>
+                      <h3
+                        className="mt-4 font-display text-xl font-bold"
+                        style={{ fontFamily: "var(--font-display)" }}
+                      >
+                        {s.title}
+                      </h3>
+                      <p className="mt-3 text-sm leading-relaxed text-fog">{s.body}</p>
+                    </div>
+                  </Reveal>
+                </li>
               ))}
             </ol>
           </div>
