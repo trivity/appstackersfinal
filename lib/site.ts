@@ -1,5 +1,5 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://appstackersfinal.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://appstackers.io";
 
 export const APP_URL = "https://app.appstackers.io";
 export const CONTACT_EMAIL = "hello@appstackers.io";
